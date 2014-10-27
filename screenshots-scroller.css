@@ -1,0 +1,43 @@
+.scroller {
+	position: relative;
+	clear: both;
+}
+.scroller .prev,
+.scroller .next {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	opacity: 0.8;
+	-webkit-transition: all 0.2s ease-out 0.05s);
+	-moz-transition: all 0.2s ease-out 0.05s);
+	-o-transition: all 0.2s ease-out 0.05s);
+	transition: all 0.2s ease-out 0.05s);
+	visibility: hidden;
+}
+.scroller .prev:hover,
+.scroller .next:hover {
+	opacity: 1;
+}
+.scroller .prev {
+	left: 0;
+}
+.scroller .next {
+	right: 0;
+}
+.scroller .item {
+	display: inline-block;
+	vertical-align: middle;
+}
+.scroller .items {
+	overflow-x: scroll;
+	white-space: nowrap;
+	width: 90%;
+	margin: 0 auto;
+}
+.scroller a {
+	border-bottom: none !important;
+	opacity: 0.8;
+}
+.scroller a:hover {
+	opacity: 1;
+}
